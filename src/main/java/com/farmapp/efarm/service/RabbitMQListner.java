@@ -20,6 +20,8 @@ public class RabbitMQListner implements MessageListener {
 		
 		ObjectMapper mapper = new ObjectMapper();
 		System.out.println("Consuming Message - " + new String(message.getBody()));
+		
+		
 		List<Employee> listCar =null;
 		//List<Employee> participantJsonList = mapper.readValue(new String(message.getBody()), new TypeReference<List<Employee>>(){});
 		try {
